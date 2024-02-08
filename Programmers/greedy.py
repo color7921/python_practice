@@ -33,3 +33,5 @@ def solution(numbers):
 
 result = solution("17")
 print(f"Final result: {result}")
+
+# 카펫
