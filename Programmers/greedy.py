@@ -35,3 +35,5 @@ result = solution("17")
 print(f"Final result: {result}")
 
 # 카펫
+brown = 10
+yellow = 2
