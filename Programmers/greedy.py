@@ -62,8 +62,6 @@ def solution(k, dungeons):
             if tmp >= need:
                 tmp -= spend
                 cnt += 1
-                print("need :", need, "spend : ", spend)
         answer = max(answer, cnt)
     return answer
 result = solution(80, [[80,20],[50,40],[30,10]])
-print(result)
