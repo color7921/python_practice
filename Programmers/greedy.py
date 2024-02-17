@@ -49,19 +49,29 @@
 # print(result)
 
 ## 피로도
-from itertools import permutations
+# from itertools import permutations
 
-def solution(k, dungeons):
-    answer = 0
+# def solution(k, dungeons):
+#     answer = 0
     
-    for p in permutations(dungeons, len(dungeons)):
-        tmp = k
-        cnt = 0 
+#     for p in permutations(dungeons, len(dungeons)):
+#         tmp = k
+#         cnt = 0 
         
-        for need, spend in p:
-            if tmp >= need:
-                tmp -= spend
-                cnt += 1
-        answer = max(answer, cnt)
-    return answer
-result = solution(80, [[80,20],[50,40],[30,10]])
+#         for need, spend in p:
+#             if tmp >= need:
+#                 tmp -= spend
+#                 cnt += 1
+#         answer = max(answer, cnt)
+#     return answer
+# result = solution(80, [[80,20],[50,40],[30,10]])
+
+
+## 전력망을 둘로 나누기
+
+n = 9
+wires = [[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]
+
+def solution(n, wires):
+    
+    return 
