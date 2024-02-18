@@ -69,9 +69,14 @@
 
 ## 전력망을 둘로 나누기
 
-n = 9
-wires = [[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]
+# n = 9
+# wires = [[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]
 
-def solution(n, wires):
+# def solution(n, wires):
     
-    return 
+#     return 
+
+s = "-1 2 3 4"
+a = list(map(int, s.split(" ")))
+
+print(str(max(a)) + " " + str(min(a)))
