@@ -76,7 +76,7 @@
     
 #     return 
 
-s = "-1 2 3 4"
-a = list(map(int, s.split(" ")))
+# s = "-1 2 3 4"
+# a = list(map(int, s.split(" ")))
 
-print(str(max(a)) + " " + str(min(a)))
+# print(str(max(a)) + " " + str(min(a)))
