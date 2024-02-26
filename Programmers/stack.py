@@ -17,3 +17,15 @@ print("Element at location:", priorities[location])
 # priorities를 enumerate로 내림차순 정렬
 # loc에 저장된 값을 내림차순 정렬한 값과 비교
 #출력
+
+def solution(priorities, location):
+    queue =  [(i,p) for i,p in enumerate(priorities)]
+    answer = 0
+    while True:
+        cur = queue.pop(0)
+        if any(cur[1] < q[1] for q in queue):
+            queue.append(cur)
+        else:
+            answer += 1
+            if cur[0] == location:
+                return answer
